@@ -71,9 +71,12 @@ Once running, select an option from the interactive menu by entering the corresp
 7. Exit
 Enter choice:
 
-
 How Data Persistence Works
 
 Contacts are stored as binary struct Contact blocks inside contacts.dat using fwrite() and fread().
 
 Updating & Deleting: Because binary records cannot be resized or removed in place easily, updateRecord() and deleteRecord() write the modified dataset to temp.dat, remove the old contacts.dat, and rename temp.dat to contacts.dat.
+
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
